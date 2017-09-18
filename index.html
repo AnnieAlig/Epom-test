@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Epom-test</title>
+	<link rel="shortcut icon" href="img/logo-sm.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="stylesheets/main.css">
+</head>
+<body>
+
+	<main>
+		<header>
+			<a href="https://epom.com/" class="header_logo"></a>
+		</header>
+		<h1 class="main-title">
+			You build an App. <br>
+			We Take care of monetization
+		</h1>
+		<h2 class="main-subtitle">
+			We know how to maximize your in-app ad revenue, <br>
+			and we help developers earn more. <br>
+			Integrate easily our SDK and experience new revenue stream
+		</h2>
+		<ul class="steps">
+			<li>Fill out the form to get started</li>
+			<li>Integrate Epom Apps SDK and start earning</li>
+			<li>Get your 100$ bonus*</li>
+		</ul>
+		<div class="main-form-container">
+			<div class="add">
+				<span class="add-title"><sup>$</sup>100</span>
+				<span class="add-caption">Signup Bonus*</span>
+			</div>
+			<div id="thankyou" onclick="hideThankyou();">Thank you for registration!
+				<button class="close" onclick="hideThankyou();">X</button></div>
+			<div class="results_display"></div>
+			<div id="error">It's a pity, something went wrong
+				<button class="close" onclick="hideError();">X</button></div>
+			<div class="results_display"></div>
+			<form action="my.json" class="main-form" method="post">
+				<legend>Register an account and monetize my app</legend>
+				<input type="text" placeholder="Name" name="name" required>
+				<label for="name">Name</label>
+				<input type="email" placeholder="Email" name="email" required pattern="[^@]+@[^@]+\.[a-zA-Z]{2,10}" oninvalid="setCustomValidity('Please enter your email')">
+				<label for="email">Email</label>
+				<input type="text" placeholder="Company" name="company" required>
+				<label for="company">Company</label>
+				<input type="url" placeholder="Website" name="website" required pattern=".{3,360}">
+				<label for="website">Website</label>
+				<input type="submit" value="Sign Up" name="signup">
+				<label for="signup">By clicking this button, you agree 
+					to our <a href="">Termes of Service</a>
+					</label>
+			</form>
+		</div>
+		
+
+		<ul class="benefits">
+			<li>All-in-one app monetization platform</li>
+			<li>Global Demand</li>
+			<li>High CPMs</li>
+		</ul>
+		<div class="main-disclaimer">
+			<h3 class="disclaimer-title">Disclaimer</h3>
+			<p class="disclaimer-text">
+				1. In order to be eligible for the bonus offer participants gave to: a) sign up to Epom Apps as a publisher in the period of July 21, 2017 US PST and August 10, 2017 US PST b) have a minimum account balance of 1000 US Dollars in order to receive payment.
+				2. Epom Apps has the right to change, modify, suspend or terminate this promotion at any time.
+				3. Epom Apps is not responsible for any errors or omissions.
+				4. Epom Apps has the right to cancel the bonus offer from an account that has processed any unfair steps, fraud or other reason that is seems to be prohibited.
+				5. Every publisher account, including those that sign up as part of this limited bonus offer, will be subject to Epom Apps Terms and Conditions for publishers.
+			</p>
+		</div>
+		<footer>			
+			<p class="copyright">
+				<a href="https://epom.com/" class="footer-logo"></a>
+				© 2011-2016 Epom. All Rights Reserved
+			</p>
+			<ul class="footer-menu">
+				<li><a href="">Monetize</a></li>
+				<li><a href="">Ad Formats</a></li>
+				<li><a href="">About</a></li>
+				<li><a href="">Privacy Policy</a></li>
+				<li><a href="">Terms of Use</a></li>
+			</ul>
+		</footer>
+	</main>
+
+
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+@import 'reset', 'variables', 'fonts';
+
+h1{
+	font-family: $secondary_font;
+	font-weight: bold;
+	font-size: 28px;
+	line-height: 30px;
+	color: $white;
+	@media (min-width: 1460px){
+		font-size: 60px;
+		line-height: 65px;
+	}
+}
+@mixin transition($property){
+    -webkit-transition: $property 0.3s;
+     -moz-transition: $property 0.3s;
+     -o-transition: $property 0.3s;
+     transition: $property 0.3s;
+}
